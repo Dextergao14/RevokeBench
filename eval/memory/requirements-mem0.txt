@@ -1,0 +1,53 @@
+# mem0 backend (eval/memory/mem0.py).  Installed 2026-09-18 into Python 3.13.9 with
+#     pip install "mem0ai==2.1.0" "qdrant-client==1.19.1"
+# Source read while writing the adapter: github.com/mem0ai/mem0 @ a39a802 (2026-09-18).
+# What runs is the installed package; the hashes below identify its files.
+mem0ai==2.1.0
+qdrant-client==1.19.1
+
+# sha256 of the mem0 2.1.0 files this adapter imports, wraps or ports from (recorded so a future
+# reader can tell whether the library moved under the adapter).  Verify with:
+#     python3 -c "import mem0,os;print(os.path.dirname(mem0.__file__))"   # then shasum -a 256
+# 5b1b75e2f00aca7bd368a6e9cd5905145d60fd05a0e36d6b1ef3e2f1b4f28ca1  mem0/memory/main.py
+# 10bc8a34b3b5f0ce24560a2a3190c9112b979a891b981f48393bbd168d915a5c  mem0/configs/prompts.py
+# 5f5ecdadd2b260fd14f36a0f338336eb760275465dd1056a99a47e1ef07702bd  mem0/memory/storage.py
+# f1dcbfcb0261de5717755ef41c0b9db35939d42056a4e06cdfca37650c0eb1f9  mem0/memory/utils.py
+# da570579d5cad69e6f123fdfe32b725235a25604e70047666bec763ba6e2bf43  mem0/vector_stores/qdrant.py
+# 9a4313fda723ad05cb52278e9ef0b9b5792b71fb3b41ba6318410121022e4527  mem0/utils/scoring.py
+
+# The `reconcile` pipeline is a port of mem0ai 1.0.11's Memory._add_to_vector_store (infer
+# branch).  1.0.11 is NOT installed and NOT vendored here, so the port has not been diffed
+# against its source in this checkout and its deviation list (mem0.py's docstring) rests on the
+# author's notes.  To close that gap, fetch the release the port claims and vendor the one file:
+#     pip download mem0ai==1.0.11 --no-deps -d /tmp/m0        # https://pypi.org/project/mem0ai/1.0.11/
+#     unzip -p /tmp/m0/mem0ai-1.0.11-*.whl mem0/memory/main.py \
+#         > eval/memory/vendor/mem0_1_0_11/memory_main.py     # then record its sha256 HERE
+# No sha256 is written above because the file was never downloaded; do not invent one.
+
+# Transitive dependencies of the two pins above, as installed here (mem0ai declares httpx,
+# openai, posthog, protobuf, pydantic, pytz, qdrant-client, sqlalchemy; qdrant-client adds grpcio,
+# numpy, portalocker, h2/httpcore).  All were already present in the reference environment from
+# requirements-memos.txt, so `pip install` of the two pins changed nothing else:
+#   httpx==0.28.1        openai==1.109.1      posthog==7.58.0      protobuf==6.33.6
+#   pydantic==2.12.3     pytz==2026.3.post1   sqlalchemy==2.0.54   portalocker==3.2.0
+#   numpy==2.4.6
+# openai and posthog are hard requirements of the package but are never reached: the LLM and
+# embedder are eval.memory.base.LLM.text / .embed injected through mem0's LLMBase / EmbeddingBase
+# (the hashed bag-of-words fallback embedder, since sentence-transformers is absent), and
+# MEM0_TELEMETRY=False plus mem0.memory.telemetry.MEM0_TELEMETRY=False disable PostHog and the
+# remote notice fetch before import.  No network at import or run time.
+
+# DO NOT INSTALL THESE -- mem0's behaviour changes silently if they are present, and the numbers
+# in mem0.md were all measured with them absent:
+#   spacy, en_core_web_sm   mem0's entity store and BM25 lemmatiser activate and change what
+#                           retrieval returns.  eval/memory/mem0.py::_offline() only disarms them
+#                           when the MODEL is missing; installing en_core_web_sm re-arms them.
+#   fastembed               the Qdrant store would load the Qdrant/bm25 model (a download) for
+#                           hybrid search; blocked here only by the `_bm25_encoder = False`
+#                           sentinel the adapter sets unless cfg bm25 is true.
+#   sentence-transformers   eval.memory.base.LLM.embed would switch from the hashed fallback to
+#                           all-MiniLM-L6-v2, changing every cosine score and the threshold's
+#                           effect (see mem0.md).  Set REVOKE_EMBED_HASH=1 to keep the fallback.
+# Verify before a run:
+#   python3 -c "import importlib.util as u;print([m for m in ('spacy','fastembed','sentence_transformers') if u.find_spec(m)])"
+# must print [].

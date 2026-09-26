@@ -1,0 +1,3 @@
+# dynamic_cheatsheet: nothing to install. Pure Python on eval/memory/base.py.
+# The original repo's tiktoken / numpy / scikit-learn / provider SDKs are needed only by its
+# own LanguageModel client and retrieval variants, neither of which DC-Cu uses here.

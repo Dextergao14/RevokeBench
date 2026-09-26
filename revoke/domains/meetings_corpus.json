@@ -1,0 +1,687 @@
+{
+ "entities": {
+  "entities": [
+   "Cindermill Analytics",
+   "Corvane CRM",
+   "Halverine Ticketing",
+   "Quillstone Docs",
+   "Pellamar Payroll",
+   "Tessergram Chat",
+   "Norvane Survey Cloud",
+   "Ashglass Boards",
+   "Wickerly Scheduling",
+   "Dromore Expense",
+   "Salvery Forms",
+   "Marchetta Video",
+   "Pindrift Notes",
+   "Larkspool Recruiting",
+   "Grellin Contract Hub",
+   "Vantomere Signature",
+   "Bexler Screen Recorder",
+   "Threndle Roadmaps",
+   "Okrane Feedback",
+   "Sundermere Helpdesk",
+   "Calverton Timesheets",
+   "Ryeford Invoicing",
+   "Mistvale Whiteboard",
+   "Tenbrook Localization",
+   "Pargent Translate",
+   "Halvern Print Portal",
+   "Dunmarch Learning",
+   "Ferrowick BI",
+   "vault-eu-2",
+   "vault-us-1",
+   "eventbus-ingest-b",
+   "sessioncache-tin",
+   "blobstore-frost",
+   "sql-primary-ams",
+   "sql-replica-dub",
+   "mesh-gateway-north",
+   "objstore-archive-cold",
+   "edgecache-lisbon",
+   "logship-hot",
+   "runner-pool-graphite",
+   "dns-anycast-alpha",
+   "warehouse-lakebed",
+   "queue-dlq-relay",
+   "secrets-broker-ohm",
+   "gpu-pool-slate",
+   "sandbox-cluster-tarn",
+   "ci-runners-basalt",
+   "bastion-frankfurt",
+   "cdn-shim-perth",
+   "metrics-tsdb-quarry",
+   "Orriel LLM API",
+   "Sablefish Inference",
+   "Thurne Embeddings API",
+   "Nimbaster Vision API",
+   "Wrenline Speech-to-Text",
+   "Palomere Rerank API",
+   "Ottavine Chat Completions",
+   "Drayfell Guardrails API",
+   "Solenne Image Gen",
+   "Marbek OCR Engine",
+   "Fennhollow Translate API",
+   "Ibarrow Code Model",
+   "Zellmark Summarizer",
+   "Halquin Voice Clone",
+   "Vestrel Data Clean Room",
+   "Perivane Identity Resolution",
+   "Colverton Enrichment",
+   "Ashbury Geo Enrichment",
+   "Trellowe Consent Manager",
+   "Ridgemont Email Delivery",
+   "Bramfield SMS Gateway",
+   "Oskerly Payments Router",
+   "Yarnholt KYC Screening",
+   "Duskwell Fraud Scoring",
+   "Pilbrook Address Validation",
+   "Wrayton Tax Engine",
+   "Ellinmoor Archive Custodian",
+   "Storrow Backup Vault",
+   "Kelmore Session Replay",
+   "Vennicut Ad Attribution",
+   "planner-core",
+   "routewright",
+   "cdp-segment-engine",
+   "halden-id",
+   "tariff-oracle",
+   "dispatch-sim",
+   "featurestore-mint",
+   "consent-ledger",
+   "billing-bridge",
+   "audit-trailhead",
+   "shipment-graph",
+   "crew-roster-svc",
+   "pii-scrubber",
+   "lookalike-builder",
+   "tenant-provisioner",
+   "exportd"
+  ],
+  "categories": [
+   "the unreviewed-subprocessor list",
+   "the no-DPA cohort",
+   "tier-3 vendors",
+   "the shadow-IT register",
+   "the model-provider watchlist",
+   "the pending-security-review queue"
+  ],
+  "conditions": [
+   "the SOC 2 audit window is open",
+   "we are inside a customer security review",
+   "the vendor freeze is in effect",
+   "a data-residency incident is open",
+   "the enterprise DPA is unsigned",
+   "the EU subprocessor notice period is still running"
+  ]
+ },
+ "org": {
+  "people": [
+   {
+    "name": "Owen Struthers",
+    "title": "Chief Technology Officer",
+    "tier": "policy"
+   },
+   {
+    "name": "Ingrid Vahl",
+    "title": "Head of Security",
+    "tier": "policy"
+   },
+   {
+    "name": "Marcus Bewley",
+    "title": "General Counsel",
+    "tier": "policy"
+   },
+   {
+    "name": "Talia Roux",
+    "title": "Data Protection Officer",
+    "tier": "policy"
+   },
+   {
+    "name": "Dana Kirchhoff",
+    "title": "Director of Platform",
+    "tier": "middle"
+   },
+   {
+    "name": "Sung-min Pae",
+    "title": "Director of Data Engineering",
+    "tier": "middle"
+   },
+   {
+    "name": "Ruth Okonjo",
+    "title": "Head of IT Operations",
+    "tier": "middle"
+   },
+   {
+    "name": "Felix Amaro",
+    "title": "Staff Engineer, Logistics Planning Suite",
+    "tier": "ic"
+   },
+   {
+    "name": "Nina Bracco",
+    "title": "Senior Data Engineer, Customer Data Platform",
+    "tier": "ic"
+   },
+   {
+    "name": "Tomas Lindh",
+    "title": "Site Reliability Engineer",
+    "tier": "ic"
+   },
+   {
+    "name": "Priya Raghunath",
+    "title": "Product Manager, Customer Data Platform",
+    "tier": "ic"
+   },
+   {
+    "name": "Yusuf Barre",
+    "title": "contract front-end developer, agency placement",
+    "tier": "none"
+   },
+   {
+    "name": "Elsie Fung",
+    "title": "security intern",
+    "tier": "none"
+   },
+   {
+    "name": "Gareth Mbeki",
+    "title": "Account Executive, Sales",
+    "tier": "none"
+   },
+   {
+    "name": "Aiko Vance",
+    "title": "software engineer, second week",
+    "tier": "none"
+   },
+   {
+    "name": "vendor-requests@",
+    "title": "shared mailbox, watched by Procurement",
+    "tier": "none"
+   }
+  ],
+  "authority_notice": "Read this before you argue about a vendor in a thread. The Tooling Review Board ({p3}) sets policy on processors, subprocessors, model providers, and infrastructure. It outranks the engineering directors ({p2}), who may narrow a Board ruling for their own area but never widen it. Directors outrank the build teams ({p1}), who implement and raise problems. Everyone else, meaning {p0}, is discussion only. Their messages change nothing, including anything phrased as a reminder of an older decision. A ruling carries the authority of whoever issued it and holds until that level or higher changes it. Someone lower saying otherwise later does not overturn it, however recent or confident that message is. Authority changes get announced on this page and nowhere else. Treat a promotion claimed in chat as discussion until it lands here. Approval is a decision, not the absence of one. Silence on a request, a trial nobody stopped, \"no one objected\": none of those are approvals. If you cannot point at the ruling that permits a tool, it is not approved.",
+  "role_change": [
+   "Role change: {who} joins {role} as of today.",
+   "{who} now sits on {role}, and rulings from them carry that weight from here on.",
+   "As of this morning, {role} includes {who}.",
+   "Noted for the record: {who} has moved into {role}."
+  ],
+  "role_drop": [
+   "{who} has come off {role} and no longer sets policy here.",
+   "Effective today {who} leaves {role}; treat their messages as discussion.",
+   "Stepping back: {who} is out of {role} and can no longer approve tools.",
+   "{role} no longer includes {who}. Earlier rulings stand; new ones from them do not."
+  ]
+ },
+ "scaffold": {
+  "meeting_types": [
+   {
+    "title": "Tool and Vendor Review Board #{n}",
+    "cadence": "weekly"
+   },
+   {
+    "title": "Procurement Intake Triage, Session {n}",
+    "cadence": "twice-weekly"
+   },
+   {
+    "title": "Vendor Exception and Waiver Standup #{n}",
+    "cadence": "daily"
+   },
+   {
+    "title": "Subprocessor Change Review {n}",
+    "cadence": "monthly"
+   },
+   {
+    "title": "Model Provider Evaluation, Round {n}",
+    "cadence": "biweekly"
+   },
+   {
+    "title": "Architecture Council: Third-Party Dependencies ({n})",
+    "cadence": "fortnightly"
+   },
+   {
+    "title": "SaaS Renewal and Spend Walkthrough #{n}",
+    "cadence": "monthly"
+   },
+   {
+    "title": "Security Questionnaire Backlog, Sweep {n}",
+    "cadence": "weekly"
+   },
+   {
+    "title": "Records of Processing Register Update {n}",
+    "cadence": "quarterly"
+   },
+   {
+    "title": "Shadow IT Discovery Readout #{n}",
+    "cadence": "semiannual"
+   }
+  ],
+  "header_lines": [
+   "Present ({n}): {people}",
+   "Apologies: {people}. Delegated votes noted in line.",
+   "Notes: {people}. Draft circulates within {n} working days.",
+   "Recording started at the top of the hour. Transcript kept {n} days, then purged.",
+   "Scheduled for {n} minutes; ran {n} over.",
+   "Minutes from #{n} approved as read. One correction logged under Other Business.",
+   "Joined late, from item 3 onward: {people}",
+   "Chair: {people}. Quorum requires {n}; met."
+  ],
+  "section_headers": {
+   "discussion": [
+    "Discussion",
+    "Discussion and Context",
+    "What Was Covered",
+    "Notes by Agenda Item"
+   ],
+   "decisions": [
+    "Decisions",
+    "Decisions and Approvals",
+    "Agreed",
+    "Resolved This Session"
+   ],
+   "actions": [
+    "Action Items",
+    "Actions and Owners",
+    "Follow-Ups",
+    "Owners and Due Dates"
+   ],
+   "other": [
+    "Other Business",
+    "Parking Lot",
+    "Round Table and Announcements",
+    "Off-Agenda"
+   ]
+  },
+  "ai_artifacts": [
+   "Summary generated automatically from the recording. Check it against the transcript before circulating.",
+   "Audio confidence dropped in two passages. Low-confidence text is bracketed and may be wrong.",
+   "Speaker labels are inferred from voice profiles. Overlapping speech is often misattributed.",
+   "Action items below were extracted by the assistant. Owners and dates are guesses until confirmed.",
+   "Only the recorded portion is covered. Screen shares, chat, and hallway follow-ons are not included.",
+   "Generated notes may compress or reorder points. The full transcript stays the source of record."
+  ]
+ },
+ "decisions": {
+  "ADD": [
+   "{e} is approved for use going forward.",
+   "Vendor review closed on {e}. It is cleared for team use.",
+   "We are standardising on {e} for this work.",
+   "Approved: {e}. Teams may use it without further sign-off.",
+   "Put {e} on the approved tooling list; the DPA is signed.",
+   "Going forward, {e} is the sanctioned processor for this workload.",
+   "{e} passed security review and is permitted as of today.",
+   "Use {e}. It carries a standing approval now, so no ticket needed."
+  ],
+  "ADD_BAN": [
+   "{e} may not be used any more.",
+   "Prohibited: {e}. No team sends data to it.",
+   "We are taking {e} off the approved list. Do not use it.",
+   "Hard block on {e}, effective now.",
+   "Stop all use of {e}. That applies to every team, no exceptions.",
+   "{e} is off limits from today.",
+   "Ban on {e}. New work and existing use both stop.",
+   "Decision recorded: {e} is disallowed for Halden work."
+  ],
+  "CONFLICT": [
+   "Security flagged {e}: it may not be used while {c}.",
+   "New guardrail on {e}. It is blocked whenever {c}.",
+   "While {c}, {e} is prohibited. Outside that it is unaffected.",
+   "{e} is restricted for the duration: no use while {c}.",
+   "Compliance attached a condition to {e}. Use is barred when {c}.",
+   "Nothing goes through {e} while {c}.",
+   "Ruling on {e}: prohibited for as long as {c}.",
+   "Hold on {e} whenever {c}. That is a policy condition, not a preference."
+  ],
+  "SUPERSEDE": [
+   "Correction to the earlier decision on {e}: it is prohibited from now on.",
+   "The previous ruling on {e} no longer stands. {e} is banned.",
+   "Update on {e}. Whatever we minuted before is replaced: no use of {e}.",
+   "Scrap the earlier entry approving {e}. It is disallowed as of today.",
+   "Replacing our earlier position on {e}. Use is prohibited going forward.",
+   "{e} was cleared previously. That is withdrawn and {e} is now blocked.",
+   "Revised decision on {e}. The old note is void; {e} may not be used.",
+   "On {e}, the earlier minute is superseded. Prohibited from here."
+  ],
+  "SUPPORT": [
+   "The architecture board reaffirmed the approval of {e}. No wording changes anywhere; the board's approval carries the higher authority and is what governs.",
+   "Escalated to executive review, which restated that {e} is approved. That restatement outranks the standing restriction on it.",
+   "Leadership has re-endorsed {e} at policy level. The restriction stays on the books but no longer governs; the approval does.",
+   "Vendor governance council put the {e} approval back on record at its own level. Where the two collide, approval over restriction.",
+   "{e} came back from the steering committee reaffirmed. The existing limit is not rescinded, it is simply outranked now.",
+   "The data governance board confirmed {e} again. Same rules as before, different order of precedence: the board's approval sits above the restriction.",
+   "Ratified upstairs: {e} remains approved. Nothing rewritten, but that ruling now takes priority over the earlier restriction.",
+   "Security leadership signed the {e} approval at board level. Read the restriction as still present and no longer controlling."
+  ],
+  "CONDITION_NARROW": [
+   "Narrowing the ban on {e}: it applies only while {c}.",
+   "The blanket block on {e} is scoped down. It bites only when {c}.",
+   "{e} is fine in general again. The prohibition holds only while {c}.",
+   "Revision to the {e} ban. Not blanket any more, limited to periods when {c}.",
+   "We are attaching a condition to the {e} prohibition. It applies while {c} and not otherwise.",
+   "On {e}, the general ban comes off. Restriction now reads: no use while {c}.",
+   "Scope change on {e}. Outside the stretch where {c}, teams may use it.",
+   "Limiting the {e} restriction to the case where {c}. Everything else is permitted."
+  ],
+  "CONDITION_WIDEN": [
+   "The condition comes off the {e} ban. It applies at all times now.",
+   "Widening the restriction on {e}. No longer tied to any situation, it holds always.",
+   "{e} is blocked outright from here, not just in the case we named before.",
+   "Dropping the qualifier on {e}. The prohibition is blanket.",
+   "The {e} restriction was conditional. As of today it is unconditional.",
+   "Change to the {e} rule: the carve-out for ordinary periods is gone and the block stands permanently.",
+   "No more window on {e}. Prohibited whatever the circumstances.",
+   "On {e}, treat the restriction as always on. The old trigger no longer limits it."
+  ],
+  "RETRACT": [
+   "Carve-out for {e}: it is exempt from the {g} prohibition.",
+   "{e} has been re-reviewed and sits outside the {g} block now.",
+   "We are pulling {e} out of scope for {g}. The category ban holds for everything else.",
+   "Exception granted on {e}. The blanket rule on {g} no longer covers it.",
+   "{g} stays banned. {e} is the one exception, effective today.",
+   "Noting an exemption: {e} is excluded from the restriction on {g}.",
+   "On {e}, the {g} rule does not apply any more. The rest of {g} is unchanged.",
+   "{e} is out from under the {g} prohibition, cleared individually."
+  ],
+  "LIFT": [
+   "The block on {e} is withdrawn. We take no position on {e} either way; whatever the owning team has standing applies.",
+   "Withdrawing our prohibition on {e}. Nothing replaces it from this level.",
+   "Our restriction on {e} comes off the books. That is not an approval, it just puts {e} back with the team that owns the choice.",
+   "We are vacating the {e} ruling. Team-level decisions on {e} govern again.",
+   "Standing down on {e}. No ruling from us, so the earlier team decision is what counts.",
+   "The {e} prohibition is lifted at this level. We are silent on it from here.",
+   "Drop our block on {e}. Read nothing further into it; the owning team's call stands.",
+   "On {e}: we are out. Restriction withdrawn, no replacement position recorded."
+  ],
+  "REVERSE": [
+   "The prohibition on {e} is reversed. It is permitted again.",
+   "Reinstating {e}. The earlier ban is undone.",
+   "{e} goes back on the approved list; the block is cancelled.",
+   "We are reversing ourselves on {e}. Use is allowed as of today.",
+   "Ban on {e} rescinded. Teams may use it as before.",
+   "The removal of {e} is undone, approved again on the same terms.",
+   "Change of decision on {e}: prohibited last time, permitted now.",
+   "{e} is unblocked. Treat it as cleared for use."
+  ],
+  "GROUP_BAN": [
+   "Nothing in {g} may be used while {c}. ({g} currently: {roster}.)",
+   "Blanket rule for as long as {c}: no tool in {g} is to be used. Members of {g}: {roster}.",
+   "While {c}, treat all of {g} as blocked. That is {roster}.",
+   "{g} is off limits whenever {c}. Roster for the record: {roster}.",
+   "Category ban. While {c}, no use of anything classed under {g} ({roster}).",
+   "For the duration of {c}, {g} is suspended in full. Current members: {roster}.",
+   "No data goes to anything in {g} while {c}. {g} today: {roster}.",
+   "Hold on the whole of {g} while {c}. Listing it so there is no dispute later: {roster}."
+  ],
+  "CTX_ON": [
+   "Noting for the record: {c}, as of today.",
+   "Status change: {c}.",
+   "Heads up, {c} starting now.",
+   "As of this morning, {c}.",
+   "Confirmed at the ops check-in: {c}.",
+   "New situation to log, effective immediately: {c}.",
+   "Flagging that {c}. Plan the week around it.",
+   "Compliance update: {c}. That takes effect now."
+  ],
+  "CTX_OFF": [
+   "That has cleared. It is no longer true that {c}.",
+   "Stand down: the condition that {c} has lapsed.",
+   "As of today it is not the case that {c}.",
+   "The window closed, so drop the assumption that {c}.",
+   "No longer in effect: {c}.",
+   "Closing this out. We are past the point where {c}.",
+   "Compliance gave the all-clear; it is no longer the case that {c}.",
+   "Withdrawing the earlier notice that {c}. That situation has ended."
+  ]
+ },
+ "chatter": {
+  "near_miss_decision": [
+   "So we are dropping {e} then. That is my read of the room, nothing more.",
+   "{e} is out as far as I am concerned. I will stop filing requests against it.",
+   "Noting for the record that {e} is our default processor. Someone correct me if that is wrong.",
+   "Right, {e} goes on the do-not-use list. Written in my own notes at least.",
+   "Treat {e} as approved from today. That is how I plan to brief the new starters.",
+   "Effective this sprint nothing of ours touches {e}. Speaking for my own squad only.",
+   "Agreed then, {e} stays in the register. I have not heard anyone object.",
+   "Consider {e} retired. I will raise the ticket to have it taken off the list.",
+   "{e} is banned, that was the upshot last time. Or that is what I took away.",
+   "Marking {e} as sanctioned on the wiki page. Shout before I hit save.",
+   "Decision as I understood it: no new workloads on {e}. Happy to be corrected.",
+   "From here on we use {e} for this. My words, not a ruling, but that is where we landed.",
+   "We are done with {e}. I will stop bringing it up either way.",
+   "Let the minutes show {e} is off the approved list. I am only the notetaker."
+  ],
+  "proposal": [
+   "Worth asking whether we still need {e} at all. Floating it, not deciding.",
+   "Idea for the roadmap review: consolidate onto {e} and retire the overlap. No action today.",
+   "Could put {e} through a fresh DPA review next quarter. Suggestion only.",
+   "One option is to drop {e} when the contract comes up. Parking it here.",
+   "Should we shortlist a replacement for {e}? Open question, nothing settled.",
+   "I would like to table a proposal to standardise on {e}. Needs an owner first.",
+   "Longer term, moving off {e} would shorten the subprocessor list. Not a formal proposal yet.",
+   "Might be cheaper to bring {e} in-house. Raising it so it is written down somewhere.",
+   "Suggest we revisit {e} at the next vendor review. No change requested now.",
+   "If budget tightens, {e} is the obvious cut. Speculation on my part."
+  ],
+  "hearsay": [
+   "Heard {e} is about to come off the approved list. Nothing in writing.",
+   "Rumour in the engineering channel is that {e} failed its last audit. Unconfirmed.",
+   "Someone said Legal has concerns about {e}. I have not seen anything official.",
+   "Word going round is {e} added a subprocessor without telling us. No source for that.",
+   "Apparently a customer objected to {e} in a security questionnaire. Second hand.",
+   "I was told {e} is already blocked. Could not find the ruling anywhere.",
+   "There is talk of {e} being renegotiated. Take it with salt.",
+   "One of the account team thinks {e} is off limits for regulated accounts. Unverified.",
+   "Someone mentioned {e} is being acquired. Nobody here has confirmed it.",
+   "Grapevine says {e} lost its certification. No document has surfaced."
+  ],
+  "question": [
+   "Are we still allowed to send data to {e}? Asking, not deciding.",
+   "Is {e} still on the approved processor list, or did that change?",
+   "Quick check: can a new project onboard {e} today?",
+   "Does the position on {e} cover the CDP side as well? Genuine question.",
+   "Somebody remind me whether {e} needs a DPIA first. Not my call either way.",
+   "What is the standing on {e} for customer data? I lost track after the last review.",
+   "Can I keep {e} in the staging stack, or is that covered too? Asking only.",
+   "Before I quote it to a client, is {e} still sanctioned?",
+   "Has anything moved on {e} since the summer? Checking, not proposing.",
+   "Is the block on {e} still live, or was it lifted? No view from me."
+  ],
+  "other_org": [
+   "FYI the Manchester office stopped using {e} last month. Their call, not ours.",
+   "Support keep their own tool list and {e} is not on it. Does not bind engineering.",
+   "A customer told us they will not accept {e} as a subprocessor. Their contract, not our policy.",
+   "The logistics side apparently moved off {e}. Nothing said about the CDP.",
+   "Our Nordics reseller bans {e} internally. Their rules, their risk register.",
+   "Heard the data science group runs {e} freely. Different tier to ours.",
+   "A prospect's security team flagged {e} during diligence. Their standard, not ours.",
+   "Contractors have been told to avoid {e}. That came from their agency.",
+   "Finance use {e} for their own reporting. Separate approval path entirely.",
+   "Sister company retired {e} in January. We never adopted that."
+  ],
+  "stale_echo": [
+   "Reminder from my notes: {e} is the approved processor here.",
+   "As I understand it {e} has been our default since the platform migration.",
+   "For what it is worth I have routed everything through {e} all quarter.",
+   "The old wiki page still lists {e} as sanctioned. Have not checked if it is current.",
+   "Last I heard {e} was fine for production. That was some months ago.",
+   "My onboarding deck says {e} is the standard tool. It may predate the review.",
+   "We agreed on {e} at some point, I am fairly sure. Cannot find the minutes.",
+   "Standing position on {e} is that it is allowed, unless something moved.",
+   "Every runbook I have mentions {e}. Nobody has updated them.",
+   "Historically {e} was the one we were told to use. Do not know if that holds."
+  ],
+  "praise": [
+   "{e} handled the migration load without complaint.",
+   "No incidents on {e} this quarter.",
+   "Support tickets touching {e} are down again.",
+   "Their side turned round our questionnaire on {e} in two days.",
+   "{e} came in under budget for once.",
+   "Latency on {e} has been good since the region move.",
+   "Nothing but positive feedback on {e} from the CDP squad.",
+   "{e} has hit its uptime target every week since June.",
+   "Onboarding a new tenant on {e} took an afternoon.",
+   "Cheapest per seat of anything we run, {e}."
+  ],
+  "rescind_own": [
+   "Forget what I floated about {e} earlier. Nothing changes.",
+   "Withdrawing my own suggestion on {e}. Status quo stands.",
+   "Ignore the note I put in the channel about {e}. Thinking out loud.",
+   "I was wrong to raise {e} as a problem. No action from me.",
+   "Scratch my earlier comment on {e}. Not pursuing it.",
+   "That thing I said about retiring {e}, disregard it.",
+   "Dropping my proposal on {e}. I do not have the context for it.",
+   "Retracting what I said about {e} last session. No change requested.",
+   "My comment on {e} should not have gone in the notes. Please strike it.",
+   "Never mind {e}. Leaving it exactly where it is."
+  ],
+  "suggest": [
+   "I would just use {e} like we always do.",
+   "Stick {e} on it, that is the usual path.",
+   "{e} should be fine for this, no?",
+   "Probably {e} again, same as the last one.",
+   "Easiest is {e}, if you ask me.",
+   "Can you point it at {e}? That is what the old job used.",
+   "{e} would save you the setup work.",
+   "Client is waiting, so {e} unless someone says otherwise.",
+   "My preference is {e}, but I am only asking.",
+   "Go with {e}, nobody has ever complained about it."
+  ]
+ },
+ "filler": {
+  "agenda_items": [
+   "Q3 pipeline review. Logistics suite closed at 82 percent of number, CDP at 61.\nTwo enterprise deals slipped into October, both sitting with customer legal.\nSales lead asked for a forecast reset before the board pack goes out.\nNo decision today. Reset numbers come back next week.",
+   "Q4 engineering headcount. Twelve open reqs, six of them backfills.\nFinance will only fund nine until the October reforecast.\nPlatform group argued the two SRE roles are the ones that unblock the rota.\nAgreed to fund the SRE pair first and hold the rest.\nRecruiting to repost both roles at the revised level.",
+   "Sydney lease comes up in March. Landlord opened at a 14 percent increase.\nCurrent space seats 40 and averages 17 people in the room on a Wednesday.\nFacilities floated a smaller floor two blocks over at today's rent.\nRegional lead wants to keep a Sydney presence for the freight customers.\nFacilities to bring three options with cost per seat.",
+   "Escalation on the Rotterdam 3PL account. Overnight planning runs failed four nights out of seven.\nRoot cause looks like their inbound feed arriving after the cutoff, not the solver.\nCustomer has asked for a written timeline and a named contact.\nSupport lead owns the daily update until runs are clean for a week.",
+   "On-call rota. Weekend coverage still lands on the same four people.\nTwo of them have carried more than half the weekends since June.\nProposal is to widen the rota to nine engineers and cut shifts to five days.\nConcern raised that the newer hires cannot debug the solver yet.\nCompromise: widen the rota, shadow the new names for one cycle.",
+   "Post-mortem, 6 August scheduler outage. Two hours 41 minutes of failed runs.\nA config change removed a retry ceiling and the queue drained itself into the database.\nDetection took 38 minutes because the alert fired on a dashboard nobody watches overnight.\nThree follow-ups agreed: page on that alert, restore the ceiling in code, load test before the next release.",
+   "FY27 budget first pass. Total ask sits 9 percent above the current run rate.\nBiggest single line is professional services headcount, unsized against booked work.\nCFO wants two versions, flat and plus five, by month end.\nDepartments to send drafts in the shared template.",
+   "User conference. Venue holds 600 and we sold 340 seats last year.\nMarketing wants two tracks, planners and data teams, plus a hands on room.\nWhether to charge for the training day went unresolved and moves to the marketing review.",
+   "Parental leave. Policy today gives 12 weeks primary and four secondary.\nPeople team benchmarked 14 companies of similar size; we sit in the bottom third.\nProposal is 18 weeks primary, 10 secondary, phased return at 80 percent for a month.\nCost modelled at roughly 180 thousand a year at current rates.\nLeadership supportive. Board sign off sought in October.",
+   "Rebrand of the customer data platform. The current name tests badly outside the Netherlands.\nThree candidates shortlisted; one is already in use by a European retail group.\nLegal wants a clearance search before any of them appears in a deck.\nProduct marketing to run the search and report in two weeks.",
+   "CDP packaging. Two tiers today, and every deal over 100 seats gets a custom bundle.\nSales says the custom work adds a week to each cycle.\nProposal is three tiers with usage bands on profile counts.\nFinance flagged that the middle band cannibalises the top for about a dozen accounts.\nHeld for a pricing run against last year's closed deals.",
+   "Sales territory realignment. Two reps cover all of Iberia and neither hit quota.\nPlan splits Iberia from southern France and moves one rep to the logistics vertical.\nComp implications for the moved rep are unsettled.\nPeople team and sales ops to draft the comp bridge before the change lands.",
+   "Q4 renewal risk. Nine accounts flagged, three of them above 200 thousand.\nOn two, the common thread is a champion who left the company.\nThe third is unhappy about planning run times, which ties back to the solver work.\nExecutive sponsors to be booked on all three this month.",
+   "Support backlog. Open tickets stand at 610, up from 430 in June.\nMedian first response is 11 hours against a 6 hour target.\nTwo agents left in July and neither was replaced.\nTwo contract agents through year end were approved, funded from the unspent training line.",
+   "Test suite flakiness. The planning integration suite fails about one run in five.\nEngineers now rerun by reflex, which hides real breakages.\nAgreed to quarantine the worst 12 tests with named owners rather than delete them.\nWeekly flake count goes on the engineering dashboard.",
+   "Documentation debt. No release notes have shipped since 4.0.\nNobody owns docs for the route editor, which is also the most searched topic.\nBoth writers are booked on onboarding guides. Release notes become a release blocker.",
+   "Localization. German and French are 70 percent done and stale in places.\nSupport sees roughly 20 tickets a month from mistranslated field labels.\nSpanish was requested by the Iberia team and pushed to next year.\nEngineering to freeze new strings for two weeks so the backlog can be cleared.",
+   "Accessibility audit. External review found 31 issues, seven blocking keyboard navigation.\nMost sit in the planning grid, written before the design system existed.\nTwo public sector deals list conformance as a requirement.\nSeven blockers land in 4.2, the remainder in the quarter after.",
+   "Interview loop for backend hires. Six stages over three weeks as it stands.\nTwo finalists dropped out citing the timeline.\nNew loop cuts to four stages and puts the take home before the panel.\nHiring managers to trial it on the next five candidates and report drop off.",
+   "Review cycle calibration. Ratings came back with 41 percent in the top two bands.\nOne group rated nobody below the middle band, which skews the curve.\nA second calibration session will be run for that group.\nFinal ratings deadline moves out one week.",
+   "Promotion outcomes. Eleven promotions this cycle, nine of them in engineering.\nTwo support cases were held for want of a level definition above senior.\nCommittee asked for the support ladder to be finished before the next cycle.\nCommunication to the affected people goes out Friday.",
+   "Internship program. Eight interns finished in August; six offers, four accepted.\nMentors reported projects scoped too large for 10 weeks.\nSuggestion to run projects in pairs next summer, headcount to be confirmed with finance.",
+   "All hands cadence. Weekly attendance has drifted to about half the company.\nRegional teams point out the slot lands at 8pm in Sydney.\nMoving to fortnightly with a rotating time was agreed, written recap either way.\nRecap goes out the same day, not two days later.",
+   "Travel and expense limits. Hotel caps have not moved in three years.\nFinance saw 60 exceptions last quarter, most in the same two cities.\nRaising caps for those two cities was accepted; the general cap holds.\nNew limits publish with the October policy refresh.",
+   "2027 holiday calendar. The company closes between Christmas and New Year as usual.\nTwo regional holidays clash with the May release train.\nAgreed to shift that release a week rather than ask people to work.",
+   "Engineering offsite in November. Budget covers two nights for 60 people.\nThe airport venue is cheaper and nobody liked it last time.\nContent splits roughly half architecture, half planning for the first half of next year.\nOrganisers to hold two venues and decide by month end.",
+   "Office move, floor plan. The new floor seats 120 against a 95 badge average.\nEngineering asked for two more small rooms instead of the second row of booths.\nSales wants the quiet corner for calls, which conflicts with the design pods.\nFacilities to redraw with the extra rooms before anything is ordered.",
+   "Building access. Out of hours entry now needs a card swipe plus a code.\nTwo on-call engineers were locked out during the August incident.\nFacilities will refresh the after hours list from the rota monthly, with a printed copy at reception.",
+   "Hiring freeze exceptions. The freeze holds except for revenue roles and the two SRE positions.\nThree managers asked for exceptions; one was granted, a support engineer in Sydney.\nTwo were declined with a note to resubmit at the reforecast.\nExceptions now go through the weekly leadership slot, not by direct message.",
+   "Revenue recognition on multi year deals. Two contracts carry an implementation fee with no milestones written, and the auditors asked when it is earned.\nFinance wants milestones in every statement of work above 50 thousand, routed through finance before signature.",
+   "Expense audit. A sample of 120 reports found 14 missing receipts and two duplicate submissions.\nThe duplicates were unintentional and have been recovered.\nFinance will send a one page reminder rather than rewrite the policy.\nManagers approving without opening the report were spoken to privately.",
+   "Customer contract redlines. Sixteen enterprise agreements sit with legal, average age 19 days.\nRedlines cluster on liability caps and the data deletion clause.\nLegal proposed a fallback position document so sales can answer without queuing.\nLegal to draft the fallbacks and walk the sales engineers through them.",
+   "Trademark filing for the new product name. Counsel advises five jurisdictions first.\nEstimated cost is 24 thousand plus renewals.\nNothing public until the search clears, so filing waits on the shortlist.",
+   "Sales onboarding. New reps take about five months to first close against a three month target.\nTwo thirds of the ramp goes on learning the logistics domain, not the product.\nEnablement will build a two week domain module with a customer role play.\nFirst cohort runs in November with six new reps.",
+   "Nordic reseller program. Two partners signed, neither has closed in six months.\nOne asked for deal registration and a margin floor.\nChannel lead believes the gap is partner training, not terms.\nOne joint training week runs before the margin question is reopened.",
+   "Analyst questionnaire is due on the 22nd and runs to 180 questions.\nLast year the submission was late and a category was dropped.\nProduct marketing owns it with named contributors per section.\nInternal draft answers due on the 15th to leave a week for review.",
+   "Website relaunch. Design is finished, content is roughly 40 percent written.\nCustomer story pages wait on approvals from three accounts, two still outstanding.\nLaunch holds if copy lands by month end.\nMarketing will cut the unapproved stories if approvals slip again.",
+   "Support engineer ladder. Three levels exist and stop below the engineering senior band.\nTwo people have been at the top level for over two years with nowhere to go.\nDraft adds a staff level carrying an on-call leadership expectation.\nPeople team to socialise the draft with the support team first.",
+   "Tech debt allocation. Engineering asked for 20 percent of each sprint.\nProduct pushed back because 4.2 scope is already tight.\nSettled at 15 percent with the solver work counted separately.\nRevisit once 4.2 ships.",
+   "Solver latency regression. Median planning run went from 90 seconds to 140 across two releases.\nBisect points at the new constraint check running per stop instead of per route.\nTwo customers noticed and one raised it in a renewal call.\nFix is scoped at a week and goes into 4.1.2.",
+   "Driver companion app. Pilot ran with 40 drivers at one customer.\nOffline handling drew the most complaints; the app forgets a stop if signal drops mid update.\nAdoption was otherwise high at about 80 percent daily use.\nOffline queueing must land before the second pilot in October.",
+   "Retail account data migration. Roughly 40 million profiles with four years of history.\nTheir extract format changed twice during scoping.\nServices estimate moved from three weeks to six.\nCustomer has been told and go live shifts to late November.",
+   "Professional services capacity for Q4. Booked work exceeds available days by about 15 percent.\nTwo implementations could go to partners if training happens in time, otherwise one go live moves to January.\nServices lead to model both and bring numbers next week.",
+   "Win loss review. Fourteen interviews across closed won and closed lost.\nLosses cluster on implementation timeline and reporting depth in the CDP.\nOne competitive loss came down to a reference we could not provide.\nMarketing to build two references in the grocery segment.",
+   "Legacy route editor. It carries 6 percent of usage and a third of front end bug reports.\nTwo large customers still depend on it for depot level edits.\nPlan is to ship the equivalent in the new editor, then announce a 12 month sunset.\nNo announcement until the replacement is generally available.",
+   "API v1 sunset. Notice went out in June with a December date.\nTraffic has fallen, but 11 accounts still send more than a thousand calls a day.\nSeven have been contacted by their account teams.\nThe remaining four get a call this month, then a written extension if they need one.",
+   "Customer advisory board. Nine members, six confirmed for the November session.\nThe draft agenda is heavy on roadmap and light on their problems.\nSuggestion to open with two customer presentations instead of ours.\nProduct to reshape the agenda and send it two weeks ahead.",
+   "NPS results. Score of 31, down four points on the spring survey.\nDetractor comments concentrate on support response times and release quality.\nPromoters name planning accuracy and the account teams.\nVerbatims go to support and engineering, not just the summary number.",
+   "SMB churn. Logo churn running at 18 percent annualised in that segment.\nHalf the churned accounts never finished onboarding.\nProposal is to gate the self serve tier behind a guided setup call.\nGrowth team to trial it on new signups for six weeks.",
+   "Referral bonus. Currently 1500, and it produced four hires this year.\nTwo of the four were the strongest hires of the cycle by manager feedback.\nRaising it to 3000 for engineering roles was agreed for six months.\nAnnouncement at the next all hands.",
+   "Release train slipping. Three of the last four releases went out late, by nine days on average.\nCause is scope added after the branch cut, not test time.\nNothing enters after the cut without a named exception from the release manager.\nException log publishes weekly.",
+   "Incident severity definitions. Current wording lets almost anything be a sev two.\nLast quarter had 22 sev twos and three of them woke people needlessly.\nRewrite ties severity to customer impact and revenue exposure, not internal alarm.\nSRE drafts, on-call engineers review, effective at the start of next month.",
+   "Sales engineering coverage. Two engineers support 14 reps and every large RFP.\nQuality slipped on the last two RFPs and one went out incomplete.\nA third sales engineer was requested and held pending the reforecast, with RFP triage in the meantime.",
+   "Bug bash for 4.2 is set for the 14th, two weeks before the branch cut.\nWhole product organisation plus volunteers from support; the last bash found 11 release blocking issues.",
+   "Demo data. Sales demos still run on a two year old set with 12 depots.\nGrocery prospects ask for something closer to 200 stores.\nA synthetic set was estimated at two weeks of one engineer and approved.\nData to be generated, not taken from any customer.",
+   "Engagement survey follow ups. Participation reached 78 percent, up from 64.\nLowest scoring item is clarity of direction in engineering.\nTwo managers asked for help running team level conversations.\nPeople team to run a manager session and publish the top three actions per group.",
+   "Commute subsidy. Uptake is about 30 percent and concentrated in head office.\nRemote staff asked for an equivalent home office allowance.\nFinance modelled parity at roughly 90 thousand a year.\nDecision deferred to the November benefits review.",
+   "Health plan design. Renewal quote came in 11 percent higher for the same coverage.\nOptions are to absorb it, raise the employee share, or narrow the network.\nNobody supported narrowing the network.\nFinance and people team to bring an absorb versus share split before open enrolment.",
+   "Contractor conversions. Four long term contractors are past 18 months.\nTwo sit in roles we would hire for anyway and both want to convert.\nCost is roughly neutral once agency fees stop, so the roles get written up for the next headcount slot.",
+   "Board meeting prep. The pack is due a week before the 30th.\nChurn and services capacity are the sections the board asked about last time.\nDraft narrative runs 40 slides against a target of 25 plus appendix.\nOwners named per section, first drafts in the shared folder by the 18th."
+  ],
+  "side_lines": [
+   "Room is booked until the hour, hard stop at the top.",
+   "Two people joined late from an airport lounge; audio was rough for the first few minutes.",
+   "Coffee machine on the third floor is out again. Facilities aware.",
+   "A dog barked through most of the first item. Amusement, no action.",
+   "Screen share failed once, so the deck went into the channel instead.",
+   "Next week's slot moves to Thursday because of the public holiday.",
+   "Apologies from the CFO, in a customer meeting.",
+   "Attendance: 11 in the room, four remote.",
+   "Notes taken by the ops coordinator this week, rotating as agreed.",
+   "Short break after item six.",
+   "Fire alarm test on Tuesday at 11. No evacuation needed.",
+   "Support lead dropped at the half hour for a paging issue.",
+   "Room has to be cleared for the interview panel at three.",
+   "Someone asked whether lunch had been ordered. It had not.",
+   "Recording started late, so the first item comes from the notes only.",
+   "Whiteboard photo went into the shared folder afterwards.",
+   "Time check at 40 minutes with two items left.",
+   "One participant lost connection twice and rejoined by phone.",
+   "Laughter when the forecast slide still said Q2.",
+   "Agenda reordered at the start so the Sydney attendees could leave early.",
+   "Engineering lead is on leave next week; a delegate will attend.",
+   "Parking permits for the new floor arrive Monday.",
+   "Clock in the room is 12 minutes fast, as several people pointed out.",
+   "Nothing raised under any other business.",
+   "Meeting ran six minutes over.",
+   "Cake in the kitchen for two work anniversaries.",
+   "Two attendees were double booked and left after the first half.",
+   "Projector needed a restart, third time this month.",
+   "Brief applause for the release going out on time.",
+   "Follow ups will be posted in the channel rather than emailed.",
+   "The 8am slot is being retired. No objections.",
+   "Series stays fortnightly through December.",
+   "A new joiner from the data team was introduced and stayed to observe.",
+   "One item moved to a smaller group to save everyone the hour.",
+   "Air conditioning was too cold. Window opened.",
+   "Invite link was wrong; a corrected one went out mid meeting.",
+   "Half the room had not read the pre read. Noted without comment.",
+   "Regional lead joined from a car and mostly listened.",
+   "Next agenda gets built from the open action list.",
+   "Chairs short by two, extras carried in from next door."
+  ],
+  "action_items": [
+   "Recruiting: repost the two SRE roles at the revised level by 12 October.",
+   "Facilities: return with three Sydney space options and cost per seat by 19 October.",
+   "Support lead: send the Rotterdam account a daily written update until runs are clean for seven days.",
+   "SRE: route the queue depth alert to the pager and confirm a test page by 10 October.",
+   "Release manager: redraw the May release train around the regional holidays by 30 October.",
+   "Finance: circulate flat and plus five budget templates to department heads by 8 October.",
+   "Product marketing: complete the name clearance search and report back on 21 October.",
+   "Sales ops: draft the comp bridge for the Iberia territory change by 15 October.",
+   "Account teams: book executive sponsors on the three largest renewal risks before 31 October.",
+   "Support lead: onboard two contract agents and reforecast first response time by 27 October.",
+   "Engineering: quarantine the twelve worst flaking tests with named owners by 17 October.",
+   "Docs: publish release notes for 4.0 and 4.1 by 24 October.",
+   "Front end: close the seven blocking accessibility issues before the 4.2 branch cut.",
+   "Hiring managers: run the four stage loop with five candidates and report drop off on 5 November.",
+   "People team: hold a second calibration session for the skewed group on 14 October.",
+   "People team: finish the support engineer ladder, including the staff level, by 20 November.",
+   "Legal: draft fallback positions on liability caps and data deletion by 23 October.",
+   "Product marketing: send internal draft answers for the analyst questionnaire on 15 October.",
+   "Enablement: build the two week domain module for the November cohort by 31 October.",
+   "Channel lead: schedule the Nordic partner training week for the week of 17 November.",
+   "Mobile team: ship offline queueing before the second driver pilot on 20 October.",
+   "Services lead: model partner delivery against a January go live and present numbers on 13 October.",
+   "Marketing: secure two grocery segment reference customers by 30 November.",
+   "Account teams: call the four remaining API v1 accounts and log outcomes by 17 October.",
+   "Product: reshape the advisory board agenda and send it to members by 28 October.",
+   "Growth team: launch the guided setup gate for self serve signups on 26 October.",
+   "SRE: circulate the rewritten incident severity definitions for review by 22 October.",
+   "Finance: bring absorb versus employee share options for the health plan by 6 November.",
+   "Section owners: put first drafts of the board pack in the shared folder by 18 October.",
+   "Engineering: generate the 200 store synthetic demo dataset by 7 November."
+  ]
+ }
+}

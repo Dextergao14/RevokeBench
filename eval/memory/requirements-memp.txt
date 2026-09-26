@@ -1,0 +1,13 @@
+# eval/memory/memp.py -- packages installed for this backend: NONE.
+#
+# Runtime dependency (already present in the reference environment, not
+# installed by the adapter's author):
+numpy            # 2.4.6 at the time of writing; any 1.24+ works
+#
+# The vendored upstream file (eval/memory/vendor/memp_evolvelab/providers/
+# memp_memory_provider.py) imports sentence_transformers and
+# sklearn.metrics.pairwise at module level.  Neither is required: embeddings go
+# through the shared local embedder (eval.memory.base.LLM.embed) and the
+# adapter satisfies the two imports with in-process stubs (a NumPy cosine
+# similarity replaces sklearn's only when scikit-learn is not installed).
+# No model download, no network.

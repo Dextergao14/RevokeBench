@@ -1,0 +1,6 @@
+# The generator, solver, verifier, grader and runners use only the Python standard library
+# (Python >= 3.10).  Memory-framework backends pin their own packages:
+#   eval/memory/requirements-mem0.txt, requirements-memos.txt, requirements-memp.txt,
+#   requirements-dynamic_cheatsheet.txt
+# Local embeddings for mem0 / MemOS / Memp (all-MiniLM-L6-v2):
+sentence-transformers

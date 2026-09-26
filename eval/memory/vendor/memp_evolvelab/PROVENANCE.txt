@@ -1,0 +1,14 @@
+Vendored from MemEvolve / Flash-Searcher-main / EvolveLab on 2026-09-20T03:42Z
+Upstream path: MemEvolve repository, Flash-Searcher-main/EvolveLab
+Method: MEMP -- procedural memory for agents (Fang et al. 2025).
+
+Byte-identical copies (sha256):
+  __init__.py                              f99cfffd1c1509baf3c58445bac1b79419e9137079dc3b57707fcf2867975989
+  base_memory.py                           dea9e8a295f75ec768d854ba15c67d8d7b35fa0dc6f51e7b2fa11ea5e7a164a1
+  memory_types.py                          db258594148509342773d3a8bf02f349738c99642ec47e5ec4ecbab9e8763236
+  providers/memp_memory_provider.py        30b239b6389120ea7952a53ec6b77faac34aaf24b9868267dca693d40f2d7a48
+
+Replaced: providers/__init__.py (upstream imports four non-vendored providers).
+Nothing else edited.  eval/memory/memp.py adapts the provider by subclassing.
+
+LICENSE: copied from Flash-Searcher-main/LICENSE (Apache License 2.0).
